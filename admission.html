@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NBKR College Admission Form</title>
+    <link rel="stylesheet" href="admission.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NBKR College Admission Form</h1>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="10th-cgpa">10th Grade CGPA:</label>
+                <input type="number" id="twelve-cgpa" name="twelve-cgpa" step="0.01" min="0" max="10" required>
+            </div>
+            <div class="form-group">
+                <label for="inter-cgpa">Intermediate CGPA:</label>
+                <input type="number" id="inter-cgpa" name="inter-cgpa" step="0.01" min="0" max="10" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="electrical">Electrical Engineering</option>
+                    <option value="mechanical">Mechanical Engineering</option>
+                    <option value="civil">Civil Engineering</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
