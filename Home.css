@@ -4,7 +4,7 @@ body {
   }
   
   header {
-    background-color: #004d33;
+    background-color: #013d26;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -38,7 +38,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #00115f;
   }
   
   #hero h1 {
