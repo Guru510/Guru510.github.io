@@ -7,7 +7,7 @@
 <body>
     <div class="container">
         <h1>NBKR College Admission Form</h1>
-        <form action="/submit" method="post">
+        <form action="/submit" method="post" id="myForm">
             <div class="form-group">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -32,6 +32,7 @@
                 <label for="course">Course:</label>
                 <select id="course" name="course" required>
                     <option value="computer-science">Computer Science</option>
+                    <option value="electrical-communication">Electrical and Communication Engineering</option>
                     <option value="electrical">Electrical Engineering</option>
                     <option value="mechanical">Mechanical Engineering</option>
                     <option value="civil">Civil Engineering</option>
@@ -42,5 +43,14 @@
             </div>
         </form>
     </div>
+
+    <script>
+        const form = document.getElementById('myForm');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('submitted successfully!');
+        });
+    </script>
 </body>
 </html>
